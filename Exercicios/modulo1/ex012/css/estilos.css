@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: antiquewhite;
+}
+header{
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    padding: 50px;
+    padding: 20px 40px;
+    top: 0;
+    color: white;
+    z-index: 1;
+
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #4B83F9;
+    box-shadow: 0px 0px 10px white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+video{
+    position:relative;
+	left:20%;
+    align-items: center;
+    color: black;
+}
+
+iframe{
+    position:relative;
+	left:20%;
+    padding: 20px;
+    margin-top: 10px;
+    color: white;
+}
+.youtube1{
+    position:relative;
+	left:30%;
+    padding: 20px;
+    margin-top: 10px;
+    color: white;
+}
+h2{
+    margin-bottom: 0;  
+    margin-top: 70px;
+    text-align: center;
+}
+p{
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+}
