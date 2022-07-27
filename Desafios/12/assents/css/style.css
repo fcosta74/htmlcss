@@ -24,6 +24,7 @@ header{
     background-color: black;
     color: #FFFFFF;
     text-align: center;
+
     
 }
 header h1{
@@ -88,4 +89,8 @@ footer p{
     color: #FFFFFF;
     font-size: 1em;
     font-family: var(--fonte1);
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
