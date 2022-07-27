@@ -4,13 +4,19 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
 }
+thead > tr > th{
+    position: sticky; /* FIXAR O CABEÇALHO */
+    top: -1px;
+    background-color: aqua;
 
+}
 table{
     width: 400px;
     border: 1px solid black;
     border-collapse: collapse;
     margin: auto;
     background-color: white;
+    position: relative;
 }
 h1{
     text-align: center;
