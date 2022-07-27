@@ -63,7 +63,7 @@ section p{
     background-attachment: fixed;
 }
 .normal{
-    background-color: white;
+    background-color: rgba(245, 231, 231, 0.822);
     color: #000000;
 }
 .imagem p{
