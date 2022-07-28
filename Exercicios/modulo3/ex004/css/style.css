@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: blue;  
+    
+}
+h1{
+    text-align: center;
+    font-size: 4em;
+    color: white;
+}
+caption{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: aqua;
+    font-size: 1.3em;
+}
+table{
+    width: 900px;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: white;
+    position: relative;
+}
