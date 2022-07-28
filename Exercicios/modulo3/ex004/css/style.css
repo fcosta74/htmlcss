@@ -29,3 +29,20 @@ table{
     background-color: white;
     position: relative;
 }
+@media (max-width: 800px) {
+    th{
+        font-size: 1em;
+    }
+    td{
+        font-size: 0.5em;
+    }
+    h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    table{
+        width: 90%;
+        max-width: 100%;
+        margin-right: 40px;
+    }
+}
