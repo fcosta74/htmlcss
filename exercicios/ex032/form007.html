@@ -5,16 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+        }
+        form{
+            width: 300px;
+            margin: auto;
+            font-size: 1em;
+            font: bolder;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;   
+
+        }
+        h1{
+            text-align: center;
+            font-size: 2em;
+        }
+        submit, reset{
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>Exemplo de Formulário</h1>
-    <p>
+    <h1>Informe os dados solicitados</h1>
+    <form method="post" autocomplete="on">
+        <p>
+            <label for="type" name="nome">Nome: </label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome" autocomplete="name" size="18"><br>
+        </p>
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+                <option value="" selected>--- Ecolha ---</option>
+                <optgroup label="Região Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="RO">Rondônia</opition>  
+                    <option value="RR">Roraima</opition>  
+                    <option value="TO">Tocantins</opition> 
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranão</opition>  
+                    <option value="PB">Paraíba</opition>  
+                    <option value="PE">Pernambuco</opition> 
+                    <option value="PI">Piauí</opition> 
+                    <option value="RN">Rio Grande do Norte</opition>  
+                    <option value="SE">Sergipe</opition>                                     
+                </optgroup>
+                <optgroup label="Região Centro-Oeste">
+                    <option value="DF">Brasília</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="GO">Goias</opition>                                   
+                </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="ES">Espírito Santo</opition> 
+                    <option value="MG">Minahs Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>                                 
+                </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="PR">Paraná</opition> 
+                    <option value="RS">Rio Grande do Sul</option> 
+                    <option value="SC">Santa Catarina</option>                                 
+                </optgroup>
 
-    </p>
-    <p>
-        <input type="submit" value="Envia">
-        <input type="reset" value="Limpar">
-    </p>
-    
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof" size="16">
+            <datalist id="lstprof">
+                <option>Adimistrador</option>
+                <option>Advogado</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Engenheiro</option>
+                <option>Médico</option>
+                <option>Professor</option>
+                <option>Motorista</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="26" rows="10" placeholder="Sua mensagem.."></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Envia">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
